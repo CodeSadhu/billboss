@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "605630567749",
+    "firebase_url": "https://code-brew-crew.firebaseio.com",
+    "project_id": "code-brew-crew",
+    "storage_bucket": "code-brew-crew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605630567749:android:42f7712b6fd71baff89a2c",
+        "android_client_info": {
+          "package_name": "com.codesadhu.invoicer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605630567749-a3s56ii1822vkg17e3pfk6idc0mpcpip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codesadhu.invoicer",
+            "certificate_hash": "3bdf331f8ef12593da3b37a4edaadadf620a6c6f"
+          }
+        },
+        {
+          "client_id": "605630567749-aebm26eb799gsq4a3kski6pqd1hp9oos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw5mlrySLwF1aSntfm7IOImdBW7KPNoTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605630567749-aebm26eb799gsq4a3kski6pqd1hp9oos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605630567749:android:98acbc85e19345b1f89a2c",
+        "android_client_info": {
+          "package_name": "com.example.olsub_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605630567749-v7mq01s30roa9uh1i9mg4iqa673mdl1l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.olsub_app",
+            "certificate_hash": "e29e1e8f5a1a98f5be58b821830ed3ea598e7584"
+          }
+        },
+        {
+          "client_id": "605630567749-aebm26eb799gsq4a3kski6pqd1hp9oos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw5mlrySLwF1aSntfm7IOImdBW7KPNoTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605630567749-aebm26eb799gsq4a3kski6pqd1hp9oos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605630567749:android:99d02443620c5946f89a2c",
+        "android_client_info": {
+          "package_name": "com.example.video_jet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605630567749-htvldvluu7en79s3seqq329trf5vsgjl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.video_jet",
+            "certificate_hash": "e29e1e8f5a1a98f5be58b821830ed3ea598e7584"
+          }
+        },
+        {
+          "client_id": "605630567749-aebm26eb799gsq4a3kski6pqd1hp9oos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw5mlrySLwF1aSntfm7IOImdBW7KPNoTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605630567749-aebm26eb799gsq4a3kski6pqd1hp9oos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605630567749:android:d89c14ffa615760bf89a2c",
+        "android_client_info": {
+          "package_name": "com.example.zerovaega_fastfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605630567749-k776s71jlseosqfpstvkuhdoebp2qfie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zerovaega_fastfood",
+            "certificate_hash": "e29e1e8f5a1a98f5be58b821830ed3ea598e7584"
+          }
+        },
+        {
+          "client_id": "605630567749-aebm26eb799gsq4a3kski6pqd1hp9oos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw5mlrySLwF1aSntfm7IOImdBW7KPNoTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605630567749-aebm26eb799gsq4a3kski6pqd1hp9oos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
