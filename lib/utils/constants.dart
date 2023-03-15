@@ -13,3 +13,13 @@ Size getScreenSize(BuildContext context) {
   Size size = MediaQuery.of(context).size;
   return size;
 }
+
+List<BoxShadow> get getBoxShadow {
+  return [
+    BoxShadow(
+      color: Colors.grey.withOpacity(0.5),
+      blurRadius: 5,
+      // spreadRadius: 10,
+    ),
+  ];
+}
