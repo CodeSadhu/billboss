@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:invoice_generator/services/firebase_service.dart';
+import 'package:invoice_generator/utils/color_palette.dart';
 
 GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>();
 

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:invoice_generator/screens/home_page.dart';
-import 'package:invoice_generator/screens/login_page.dart';
+import 'package:invoice_generator/screens/home/home_page.dart';
+import 'package:invoice_generator/screens/login/login_page.dart';
+import 'package:invoice_generator/services/firebase_service.dart';
+import 'package:invoice_generator/utils/color_palette.dart';
 import 'package:invoice_generator/utils/constants.dart';
 import 'package:invoice_generator/utils/routes.dart';
 import 'package:invoice_generator/utils/shared_prefs_util.dart';
@@ -9,10 +11,9 @@ import 'package:responsive_framework/responsive_framework.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  FirebaseService().initializeFirebase();
 
   await SharedPrefs.init();
-
-  firebaseService.initializeFirebase();
 
   runApp(const MyApp());
 }
@@ -52,8 +53,12 @@ class _MyAppState extends State<MyApp> {
       ),
       title: CommonStrings.appTitle,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        backgroundColor: ColorPalette.primaryBackgroundColor,
+        scaffoldBackgroundColor: ColorPalette.primaryBackgroundColor,
+        cardColor: ColorPalette.buttonTextColor,
+        primaryColor: ColorPalette.secondaryColor,
         fontFamily: appFont,
+        useMaterial3: true,
       ),
       navigatorKey: rootNavigatorKey,
       home: token != null ? const HomePage() : const LoginPage(),

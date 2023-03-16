@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:invoice_generator/firebase_options.dart';
 
 class FirebaseService {
   FirebaseService._();
@@ -10,11 +11,12 @@ class FirebaseService {
   }
 
   Future<void> initializeFirebase() async {
-    await Firebase.initializeApp();
-    FirebaseAuth.instance.authStateChanges().listen(authStateChangeListener);
-
-    FirebaseAuth.instance.idTokenChanges().listen(idTokenChangeListener);
-
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    ).then((value) {
+      FirebaseAuth.instance.authStateChanges().listen(authStateChangeListener);
+      FirebaseAuth.instance.idTokenChanges().listen(idTokenChangeListener);
+    });
     // await FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
   }
 
