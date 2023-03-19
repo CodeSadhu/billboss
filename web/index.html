@@ -40,6 +40,24 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <!-- Firebase Auth SDK -->
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDSfRNt653t0WWEJuFWO1WC5hJrkdbJRdg",
+      authDomain: "code-brew-crew.firebaseapp.com",
+      databaseURL: "https://code-brew-crew.firebaseio.com",
+      projectId: "code-brew-crew",
+      storageBucket: "code-brew-crew.appspot.com",
+      messagingSenderId: "605630567749",
+      appId: "1:605630567749:web:d816f6dcd38de87df89a2c"
+    }
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig)
+  </script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js

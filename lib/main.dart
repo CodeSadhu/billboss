@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       builder: (context, child) => ResponsiveWrapper.builder(
         child,
-        maxWidth: 1200,
+        maxWidth: 1920,
         minWidth: 480,
         defaultScale: true,
         breakpoints: [
@@ -53,7 +53,6 @@ class _MyAppState extends State<MyApp> {
       ),
       title: CommonStrings.appTitle,
       theme: ThemeData(
-        backgroundColor: ColorPalette.primaryBackgroundColor,
         scaffoldBackgroundColor: ColorPalette.primaryBackgroundColor,
         cardColor: ColorPalette.buttonTextColor,
         primaryColor: ColorPalette.secondaryColor,
