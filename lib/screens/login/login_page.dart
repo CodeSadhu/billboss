@@ -19,9 +19,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   late Size screenSize;
 
-  final GoogleSignIn _googleSignIn = GoogleSignIn(
-      clientId:
-          '605630567749-a3s56ii1822vkg17e3pfk6idc0mpcpip.apps.googleusercontent.com');
+  final GoogleSignIn _googleSignIn = GoogleSignIn();
 
   @override
   Widget build(BuildContext context) {

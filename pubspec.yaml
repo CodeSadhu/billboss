@@ -37,6 +37,7 @@ dependencies:
   firebase_auth: ^4.2.8
   firebase_core: ^2.6.1
   google_sign_in: ^6.0.0
+  google_sign_in_web: ^0.11.0+2
   shared_preferences: ^2.0.17
   flutter_svg: ^1.1.6
   hive_flutter: ^1.1.0
