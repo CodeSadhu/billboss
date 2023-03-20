@@ -18,9 +18,18 @@ Size getScreenSize(BuildContext context) {
 List<BoxShadow> get getBoxShadow {
   return [
     BoxShadow(
-      color: Colors.grey.withOpacity(0.5),
+      color: ColorPalette.black.withOpacity(0.25),
       blurRadius: 5,
       // spreadRadius: 10,
     ),
   ];
+}
+
+EdgeInsets getScaffoldPadding({
+  required Size screenSize,
+}) {
+  return EdgeInsets.symmetric(
+    vertical: screenSize.height * 0.02,
+    horizontal: screenSize.width * 0.04,
+  );
 }
