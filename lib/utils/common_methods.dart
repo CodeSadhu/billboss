@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:invoice_generator/utils/constants.dart';
@@ -17,5 +18,15 @@ class CommonMethods {
       AppRoutes.login,
       (route) => false,
     );
+  }
+
+  static bool isMobilePlatform() {
+    if (defaultTargetPlatform == TargetPlatform.android ||
+        defaultTargetPlatform == TargetPlatform.iOS ||
+        defaultTargetPlatform == TargetPlatform.fuchsia) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

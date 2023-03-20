@@ -43,6 +43,7 @@ dependencies:
   hive_flutter: ^1.1.0
   provider: ^6.0.5
   flutter_provider: ^2.1.0
+  easy_sidemenu: ^0.4.1+1
 
 dev_dependencies:
   flutter_test:
