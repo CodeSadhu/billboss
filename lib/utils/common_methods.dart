@@ -29,4 +29,12 @@ class CommonMethods {
       return false;
     }
   }
+
+  static void openHomePage({required dynamic id}) {
+    SharedPrefs.setToken(id.toString());
+    Navigator.pushReplacementNamed(
+      rootNavigatorKey.currentContext!,
+      AppRoutes.home,
+    );
+  }
 }

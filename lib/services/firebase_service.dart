@@ -6,9 +6,13 @@ class FirebaseService {
   FirebaseService._();
 
   static final FirebaseService firebaseService = FirebaseService._();
+  late FirebaseAuth _firebaseAuthInstance;
+
   factory FirebaseService() {
     return firebaseService;
   }
+
+  FirebaseAuth get firebaseAuth => _firebaseAuthInstance;
 
   Future<void> initializeFirebase() async {
     await Firebase.initializeApp(
@@ -16,6 +20,7 @@ class FirebaseService {
     ).then((value) {
       FirebaseAuth.instance.authStateChanges().listen(authStateChangeListener);
       FirebaseAuth.instance.idTokenChanges().listen(idTokenChangeListener);
+      _firebaseAuthInstance = FirebaseAuth.instance;
     });
     // await FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
   }

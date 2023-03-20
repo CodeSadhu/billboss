@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:invoice_generator/screens/home/home_page.dart';
 import 'package:invoice_generator/screens/login/login_page.dart';
+import 'package:invoice_generator/screens/login/signup_page.dart';
 import 'package:invoice_generator/services/firebase_service.dart';
 import 'package:invoice_generator/utils/color_palette.dart';
 import 'package:invoice_generator/utils/constants.dart';
@@ -65,6 +66,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         AppRoutes.home: (context) => const HomePage(),
         AppRoutes.login: (context) => const LoginPage(),
+        AppRoutes.signup: (context) => const SignUpPage(),
       },
     );
   }

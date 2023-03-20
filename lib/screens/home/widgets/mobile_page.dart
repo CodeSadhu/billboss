@@ -82,6 +82,7 @@ class _MobilePageState extends State<MobilePage> {
   Widget build(BuildContext context) {
     screenSize = getScreenSize(context);
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       backgroundColor: ColorPalette.primaryBackgroundColor,
       appBar: buildAppBar(),
       floatingActionButton: FloatingActionButton.extended(
