@@ -30,53 +30,57 @@ class _LoginPageState extends State<LoginPage> {
           vertical: screenSize.height * 0.02,
           horizontal: screenSize.width * 0.04,
         ),
-        child: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SvgPicture.asset(
-                SvgPath.invoiceGraphic,
-                height: screenSize.height * 0.2,
-              ),
-              SizedBox(
-                height: screenSize.height * 0.02,
-              ),
-              Text(
-                'Invoice Generator',
-                style: h2Style(
-                  screenSize: screenSize,
-                ),
-              ),
-              SizedBox(
-                height: screenSize.height * 0.02,
-              ),
-              ElevatedButton.icon(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: ColorPalette.tertiaryColor,
-                  padding: EdgeInsets.symmetric(
-                    horizontal: screenSize.width * 0.04,
-                    vertical: screenSize.height * 0.02,
-                  ),
-                ),
-                label: Text(
-                  'Login with Google',
-                  style: h3Style(
-                    screenSize: screenSize,
-                  ),
-                ),
-                icon: Image.asset(
-                  ImagePath.googleIcon,
-                  height: screenSize.height * 0.03,
-                  fit: BoxFit.cover,
-                ),
-                onPressed: () async {
-                  await signInWithGoogle();
-                },
-              ),
-            ],
+        child: loginPageView(),
+      ),
+    );
+  }
+
+  Widget loginPageView() {
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          SvgPicture.asset(
+            SvgPath.invoiceGraphic,
+            height: screenSize.height * 0.2,
           ),
-        ),
+          SizedBox(
+            height: screenSize.height * 0.02,
+          ),
+          Text(
+            'Invoice Generator',
+            style: h2Style(
+              screenSize: screenSize,
+            ),
+          ),
+          SizedBox(
+            height: screenSize.height * 0.02,
+          ),
+          ElevatedButton.icon(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: ColorPalette.tertiaryColor,
+              padding: EdgeInsets.symmetric(
+                horizontal: screenSize.width * 0.04,
+                vertical: screenSize.height * 0.02,
+              ),
+            ),
+            label: Text(
+              'Login with Google',
+              style: h3Style(
+                screenSize: screenSize,
+              ),
+            ),
+            icon: Image.asset(
+              ImagePath.googleIcon,
+              height: screenSize.height * 0.03,
+              fit: BoxFit.cover,
+            ),
+            onPressed: () async {
+              await signInWithGoogle();
+            },
+          ),
+        ],
       ),
     );
   }
