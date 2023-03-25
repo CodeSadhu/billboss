@@ -6,6 +6,8 @@ class ColorPalette {
   static Color white = Colors.white;
   static Color black = Colors.black;
   static Color blue = Colors.blue.shade600;
+  static Color errorRed = Colors.red.shade700;
+  static Color successGreen = Colors.green.shade600;
 
   static const primaryBackgroundColor = Color(0xFF2E2F2F);
   static const secondaryColor = Color(0xFF00AAB3);

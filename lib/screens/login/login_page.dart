@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:invoice_generator/common_widgets/text_styles.dart';
 import 'package:invoice_generator/screens/login/widgets/app_header_widget.dart';
@@ -9,8 +10,8 @@ import 'package:invoice_generator/utils/common_methods.dart';
 import 'package:invoice_generator/utils/constants.dart';
 import 'package:invoice_generator/utils/images.dart';
 import 'package:invoice_generator/utils/routes.dart';
-import 'package:invoice_generator/utils/shared_prefs_util.dart';
 import 'package:invoice_generator/utils/strings.dart';
+import 'package:invoice_generator/utils/toast.dart';
 import 'package:invoice_generator/utils/toast_messages.dart';
 
 class LoginPage extends StatefulWidget {
@@ -103,11 +104,11 @@ class _LoginPageState extends State<LoginPage> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(
-          decoration: BoxDecoration(
-            boxShadow: getBoxShadow,
-            borderRadius: BorderRadius.circular(20),
-            color: ColorPalette.tertiaryColor,
-          ),
+          // decoration: BoxDecoration(
+          //   boxShadow: getBoxShadow,
+          //   borderRadius: BorderRadius.circular(20),
+          //   color: ColorPalette.tertiaryColor,
+          // ),
           padding: EdgeInsets.symmetric(
             horizontal: screenSize.width * 0.02,
             vertical: screenSize.height * 0.01,
@@ -210,9 +211,17 @@ class _LoginPageState extends State<LoginPage> {
         CommonMethods.openHomePage(id: loginResult.user!.uid);
         print(
             'Registered email and password on Firebase. Using registered email and password to sign in.');
+        showToast(
+          message:
+              'Registered email and password on Firebase. Using registered email and password to sign in.',
+          type: ToastType.success,
+        );
       }
     } catch (e, stacktrace) {
       if (e is FirebaseAuthException) {
+        print(e);
+        showToast(message: e.message!.toString(), type: ToastType.error);
+      } else if (e is PlatformException) {
         print(e);
       }
     }
@@ -223,6 +232,10 @@ class _LoginPageState extends State<LoginPage> {
       await _googleSignIn.signIn().then((signInDetails) {
         if (signInDetails != null) {
           print('Signed in with google. Auth id: ${signInDetails.id}');
+          showToast(
+            message: 'Signed in with google. Auth id: ${signInDetails.id}',
+            type: ToastType.success,
+          );
           CommonMethods.openHomePage(id: signInDetails.id);
         } else {
           showDialog(

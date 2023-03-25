@@ -8,6 +8,7 @@ import 'package:invoice_generator/utils/color_palette.dart';
 import 'package:invoice_generator/utils/common_methods.dart';
 import 'package:invoice_generator/utils/constants.dart';
 import 'package:invoice_generator/utils/routes.dart';
+import 'package:invoice_generator/utils/toast.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -45,10 +46,16 @@ class _SignUpPageState extends State<SignUpPage> {
         CommonMethods.openHomePage(id: loginResult.user!.uid);
         print(
             'Registered email and password on Firebase. Using registered email and password to sign in.');
+        showToast(
+          message:
+              'Registered email and password on Firebase. Using registered email and password to sign in.',
+          type: ToastType.success,
+        );
       }
     } catch (e, stacktrace) {
       if (e is FirebaseAuthException) {
         print(e);
+        showToast(message: e.message.toString(), type: ToastType.error);
       }
     }
   }
