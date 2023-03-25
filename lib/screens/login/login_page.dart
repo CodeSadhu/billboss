@@ -236,7 +236,6 @@ class _LoginPageState extends State<LoginPage> {
             message: 'Signed in with google. Auth id: ${signInDetails.id}',
             type: ToastType.success,
           );
-
           CommonMethods.openHomePage(id: signInDetails.id);
         } else {
           showDialog(
