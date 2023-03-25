@@ -236,6 +236,11 @@ class _LoginPageState extends State<LoginPage> {
             message: 'Signed in with google. Auth id: ${signInDetails.id}',
             type: ToastType.success,
           );
+          //   showToast(
+          //   message:
+          //       'Registered email and password on Firebase. Using registered email and password to sign in.',
+          //   type: ToastType.success,
+          // );
           CommonMethods.openHomePage(id: signInDetails.id);
         } else {
           showDialog(
