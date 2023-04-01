@@ -1,9 +1,10 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:invoice_generator/common_widgets/text_styles.dart';
-import 'package:invoice_generator/utils/color_palette.dart';
-import 'package:invoice_generator/utils/constants.dart';
-import 'package:invoice_generator/utils/svg_paths.dart';
+import 'package:billboss/common_widgets/text_styles.dart';
+import 'package:billboss/utils/color_palette.dart';
+import 'package:billboss/utils/constants.dart';
+import 'package:billboss/utils/svg_paths.dart';
 
 class EmptyInvoiceCard extends StatelessWidget {
   const EmptyInvoiceCard({
@@ -14,11 +15,16 @@ class EmptyInvoiceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     return Container(
-      width: double.infinity,
+      width: kIsWeb == false ? double.infinity : null,
       decoration: BoxDecoration(
         boxShadow: getBoxShadow,
         color: ColorPalette.buttonTextColor,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: kIsWeb
+            ? const BorderRadius.only(
+                topRight: Radius.circular(15),
+                bottomRight: Radius.circular(15),
+              )
+            : BorderRadius.circular(20),
       ),
       padding: EdgeInsets.symmetric(
         vertical: screenSize.height * 0.01,

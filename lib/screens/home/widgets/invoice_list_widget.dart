@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:invoice_generator/screens/home/widgets/empty_invoice_card.dart';
+import 'package:billboss/screens/home/widgets/empty_invoice_card.dart';
 
 class InvoiceListWidget extends StatelessWidget {
   const InvoiceListWidget({

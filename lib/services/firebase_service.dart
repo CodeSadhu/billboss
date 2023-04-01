@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:invoice_generator/firebase_options.dart';
+import 'package:billboss/firebase_options.dart';
 
 class FirebaseService {
   FirebaseService._();

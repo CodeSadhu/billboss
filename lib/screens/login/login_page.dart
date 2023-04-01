@@ -2,17 +2,17 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:invoice_generator/common_widgets/text_styles.dart';
-import 'package:invoice_generator/screens/login/widgets/app_header_widget.dart';
-import 'package:invoice_generator/services/firebase_service.dart';
-import 'package:invoice_generator/utils/color_palette.dart';
-import 'package:invoice_generator/utils/common_methods.dart';
-import 'package:invoice_generator/utils/constants.dart';
-import 'package:invoice_generator/utils/images.dart';
-import 'package:invoice_generator/utils/routes.dart';
-import 'package:invoice_generator/utils/strings.dart';
-import 'package:invoice_generator/utils/toast.dart';
-import 'package:invoice_generator/utils/toast_messages.dart';
+import 'package:billboss/common_widgets/text_styles.dart';
+import 'package:billboss/screens/login/widgets/app_header_widget.dart';
+import 'package:billboss/services/firebase_service.dart';
+import 'package:billboss/utils/color_palette.dart';
+import 'package:billboss/utils/common_methods.dart';
+import 'package:billboss/utils/constants.dart';
+import 'package:billboss/utils/images.dart';
+import 'package:billboss/utils/routes.dart';
+import 'package:billboss/utils/strings.dart';
+import 'package:billboss/utils/toast.dart';
+import 'package:billboss/utils/toast_messages.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

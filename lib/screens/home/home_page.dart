@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:invoice_generator/screens/home/widgets/web_page.dart';
-import 'package:invoice_generator/utils/common_methods.dart';
-import 'package:invoice_generator/screens/home/widgets/mobile_page.dart';
+import 'package:billboss/screens/home/widgets/temp.dart';
+import 'package:billboss/screens/home/widgets/web_page.dart';
+import 'package:billboss/utils/common_methods.dart';
+import 'package:billboss/screens/home/widgets/mobile_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -32,6 +33,7 @@ class _MainPageState extends State<HomePage> {
       return MobilePage(invoiceList: invoiceList);
     } else {
       return WebPage(invoiceList: invoiceList);
+      // return MyHomePage(title: 'title');
     }
   }
 }

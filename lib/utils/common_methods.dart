@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:invoice_generator/utils/constants.dart';
-import 'package:invoice_generator/utils/routes.dart';
-import 'package:invoice_generator/utils/shared_prefs_util.dart';
+import 'package:billboss/utils/constants.dart';
+import 'package:billboss/utils/routes.dart';
+import 'package:billboss/utils/shared_prefs_util.dart';
 
 class CommonMethods {
   CommonMethods._();

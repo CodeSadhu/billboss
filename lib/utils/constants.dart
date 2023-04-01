@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:invoice_generator/services/firebase_service.dart';
-import 'package:invoice_generator/utils/color_palette.dart';
+import 'package:billboss/services/firebase_service.dart';
+import 'package:billboss/utils/color_palette.dart';
 
 GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>();
 
@@ -31,5 +31,25 @@ EdgeInsets getScaffoldPadding({
   return EdgeInsets.symmetric(
     vertical: screenSize.height * 0.02,
     horizontal: screenSize.width * 0.04,
+  );
+}
+
+InputDecoration buildTextfieldBorder({
+  InputBorder? border,
+  BorderRadius? borderRadius,
+  BorderSide? borderSide,
+  EdgeInsets? contentPadding,
+  Color? fillColor,
+  bool? filled,
+}) {
+  return InputDecoration(
+    fillColor: fillColor,
+    filled: filled,
+    contentPadding: contentPadding,
+    border: border ??
+        OutlineInputBorder(
+          borderRadius: borderRadius ?? BorderRadius.circular(15),
+          borderSide: borderSide ?? BorderSide(color: ColorPalette.black),
+        ),
   );
 }

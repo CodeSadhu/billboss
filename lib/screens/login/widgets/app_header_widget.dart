@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:invoice_generator/common_widgets/text_styles.dart';
-import 'package:invoice_generator/utils/color_palette.dart';
-import 'package:invoice_generator/utils/svg_paths.dart';
+import 'package:billboss/common_widgets/text_styles.dart';
+import 'package:billboss/utils/color_palette.dart';
+import 'package:billboss/utils/svg_paths.dart';
 
 class AppHeaderWidget extends StatelessWidget {
   const AppHeaderWidget({

@@ -1,6 +1,6 @@
 {
-    "name": "invoice_generator",
-    "short_name": "invoice_generator",
+    "name": "billboss",
+    "short_name": "billboss",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

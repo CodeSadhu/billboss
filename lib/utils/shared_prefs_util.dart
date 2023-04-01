@@ -1,4 +1,4 @@
-import 'package:invoice_generator/utils/strings.dart';
+import 'package:billboss/utils/strings.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPrefs {

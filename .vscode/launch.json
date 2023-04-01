@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "invoice_generator",
+            "name": "billboss",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "invoice_generator (profile mode)",
+            "name": "billboss (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "invoice_generator (release mode)",
+            "name": "billboss (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:invoice_generator/common_widgets/text_styles.dart';
-import 'package:invoice_generator/screens/home/widgets/invoice_list_widget.dart';
-import 'package:invoice_generator/utils/color_palette.dart';
-import 'package:invoice_generator/utils/common_methods.dart';
-import 'package:invoice_generator/utils/constants.dart';
-import 'package:invoice_generator/utils/strings.dart';
+import 'package:billboss/common_widgets/text_styles.dart';
+import 'package:billboss/screens/home/widgets/invoice_list_widget.dart';
+import 'package:billboss/utils/color_palette.dart';
+import 'package:billboss/utils/common_methods.dart';
+import 'package:billboss/utils/constants.dart';
+import 'package:billboss/utils/routes.dart';
+import 'package:billboss/utils/strings.dart';
 
 class MobilePage extends StatefulWidget {
   const MobilePage({
@@ -32,6 +33,7 @@ class _MobilePageState extends State<MobilePage> {
       ),
       child: AppBar(
         backgroundColor: ColorPalette.primaryBackgroundColor,
+        automaticallyImplyLeading: false,
         actions: [
           PopupMenuButton(
             icon: const Icon(
@@ -105,7 +107,9 @@ class _MobilePageState extends State<MobilePage> {
           borderRadius: BorderRadius.circular(15),
         ),
         backgroundColor: ColorPalette.secondaryColor,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, AppRoutes.form);
+        },
       ),
       body: Container(
         padding: EdgeInsets.symmetric(

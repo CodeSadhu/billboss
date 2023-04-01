@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:invoice_generator/utils/color_palette.dart';
-import 'package:invoice_generator/utils/constants.dart';
-import 'package:invoice_generator/utils/strings.dart';
+import 'package:billboss/utils/color_palette.dart';
+import 'package:billboss/utils/constants.dart';
+import 'package:billboss/utils/strings.dart';
 
 TextStyle appbarStyle({
   required Size screenSize,

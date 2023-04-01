@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "invoice_generator" "\0"
+            VALUE "FileDescription", "billboss" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "invoice_generator" "\0"
+            VALUE "InternalName", "billboss" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "invoice_generator.exe" "\0"
-            VALUE "ProductName", "invoice_generator" "\0"
+            VALUE "OriginalFilename", "billboss.exe" "\0"
+            VALUE "ProductName", "billboss" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
